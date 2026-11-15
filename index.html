@@ -235,7 +235,10 @@ footer{padding:40px 0;background:var(--paper)}
 .comp{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px}
 .comp h3{font-size:1rem;margin-bottom:6px}
 .comp p{font-size:.88rem;color:var(--muted)}
-.feature{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px}
+.feature{display:grid;grid-template-columns:1fr;gap:24px;margin-bottom:24px}
+.feature .fcard ul{columns:2;column-gap:40px}
+.feature .fcard li{break-inside:avoid;margin:0 0 10px}
+@media (max-width:700px){.feature .fcard ul{columns:1}}
 .fcard{background:var(--navy);color:#DCE4EE;border-radius:12px;padding:30px;position:relative;overflow:hidden}
 .fcard .tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--navy);background:var(--gold);padding:4px 10px;border-radius:999px}
 .fcard h3{color:#fff;font-size:1.4rem;margin:14px 0 10px}
@@ -378,8 +381,8 @@ footer{padding:40px 0;background:var(--paper)}
 <section id="competencies" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head">
-      <div><p class="eyebrow">Core competencies</p><h2 style="margin-top:12px">Operational depth, with AI and blockchain built in.</h2></div>
-      <p class="lead">Our foundation is hands-on operations and supply chain leadership. We add AI and blockchain where they make field operations faster, more transparent and easier to audit.</p>
+      <div><p class="eyebrow">Core competencies</p><h2 style="margin-top:12px">Operational depth, with AI built in.</h2></div>
+      <p class="lead">Our foundation is hands-on operations and supply chain leadership. We add AI where it makes field operations faster, more consistent and easier to report on.</p>
     </div>
     <div class="feature">
       <article class="fcard">
@@ -393,19 +396,6 @@ footer{padding:40px 0;background:var(--paper)}
           <li>Demand, inventory and lead-time forecasting for spares, chemicals and equipment</li>
           <li>Anomaly detection and alarm review on operational and sensor data</li>
           <li>AI-enabled knowledge bases that keep project know-how searchable</li>
-        </ul>
-      </article>
-      <article class="fcard">
-        <svg viewBox="0 0 100 100" aria-hidden="true"><g fill="none" stroke="#fff" stroke-width="3"><rect x="8" y="35" width="24" height="24" rx="3"/><rect x="38" y="35" width="24" height="24" rx="3"/><rect x="68" y="35" width="24" height="24" rx="3"/><path d="M32 47h6M62 47h6"/></g></svg>
-        <span class="tag">Specialty</span>
-        <h3>Blockchain</h3>
-        <p>Tamper-evident records for supply chains that cross borders, companies and jurisdictions.</p>
-        <ul>
-          <li>End-to-end traceability and chain of custody for equipment, chemicals and cargo</li>
-          <li>Digital trade documents: bills of lading, certificates of origin and inspection records</li>
-          <li>Smart-contract milestones that release payments when delivery is verified</li>
-          <li>Provenance and audit trails for crude, products and local-content reporting</li>
-          <li>Shared, permissioned ledgers between operators, contractors and investors</li>
         </ul>
       </article>
     </div>
